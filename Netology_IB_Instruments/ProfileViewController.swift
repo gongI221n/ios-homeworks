@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         guard let profileView = Bundle.main.loadNibNamed("ProfileView", owner: nil, options: nil)?.first as? ProfileView else { return }
-        profileView.frame = CGRect(x: 15, y: 50, width: view.bounds.width - 30, height: 330)
+        profileView.frame = CGRect(x: 15, y: 50, width: view.bounds.width - 30, height: 600)
         view.addSubview(profileView)
         
         profileView.nameLabel.text = "Ivan"
